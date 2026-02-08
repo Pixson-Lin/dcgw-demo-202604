@@ -1,0 +1,37 @@
+# TiMOS-C-25.7.R1 cpm/x86_64 Nokia 7750 SR Copyright (c) 2000-2025 Nokia.
+# All rights reserved. All use subject to applicable license agreements.
+# Built on Wed Jul 16 21:13:09 UTC 2025 by builder in /builds/257B/R1/panos/main/srux
+# Configuration format version 25.7 revision 0
+
+# Generated 2026-02-08T07:21:29.0Z by admin from 3fff:172:20:20::1
+# Commit ID 23
+#   Committed 2026-02-08T07:21:29.0Z by admin (MD-CLI) from 3fff:172:20:20::1
+
+    configure {
+        service {
+            vprn "DCVPN" {
+                interface "to_TNYK-LOCAL_1" {
++                   vpls "DCL2" {
++                   }
+                }
+            }
+        }
+    }
+
+persistent-indices {
+    description "Persistent indices are maintained by the system and must not be modified."
+    vrtr-id {
+        router-name "DCVPN" vrtr-id 2
+    }
+    vrtr-if-id {
+        router-name "DCVPN" interface-name "to_TNYK-LOCAL_1" vrtr-id 2 if-index 3
+        router-name "DCVPN" interface-name "to_TPE7-DCGW_1" vrtr-id 2 if-index 2
+    }
+    chassis-mac {
+        client lag index 10 pool 1 offset 330
+        client lag index 20 pool 1 offset 340
+        client lag index 100 pool 1 offset 420
+    }
+}
+
+# Finished 2026-02-08T07:21:29.0Z

@@ -18,22 +18,22 @@
   },
   "ssh-pub-keys": ["ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBLRpKTPmjJWZpR0YUY6M9ynyi5WErLd3TFUCmWiKM57aEFQ4NaQlfOY6p/cluJ2yBcZbDDfd1hUNbe+oV4Guuq0=","ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDBnCeZ5KnsuBHODeUjOjIuACoTQlu8VPcUUVmYze/P8rbIwmcfWgSuZ+cfickuL62wAe6rp0Y402RJ/LF2rA4Fli349GAlyWEj0tAoYuT3+4IB+Kg5JBMHTO9hoR+swnnyFg5WjwFt9KH/98FGANyJjjagViAuyZj8CzD98pduDiHlVGSWBdxsC35Z713StZjYZXtuJM+hyJFCm7lbv8jLt2Sn/UgqIPLaTqnp/laQ2ewLe8wt/DOLdki6G7qlqE+WS7VuFLGL3X7V5q1O2kOguZkPq/g7/DnWfBsWkTrNSFP0LvzAb5e1f6qsOIrVHGkl6jT5w6uCD3aEWchDQbsyCj62mCMJuy9auff7vSaQQn+qhNKRv2meqK1v7l0cKuKaoT6rdw3bYt4FlfWEUo1vc/IbvM/WZNBbRc9Drc84ITk0uHszLpAkl+opaFNuxFFNRkg3Ail63JlS7/OhAsSuuE9s2voWFztr/WqquyfDkaYm3hOArbgVoNPAk/g0IUH0YPI737Ooiyk9vQmhYDKbJI+kuXWSn3GZHi1c8ozwkfZetPdg9pZ22qFPFgdBRrJRogFT3ahk9dbUxeV1dN27OYQ7fbA3aXJdyrCNIa2s6NchemFy6Kf/EcrfUtb7S6ck0OKTGYu4Kob/c22gT+J5y4uKrX5moVfFKEtAqNPnDQ=="],
   "nodes": {
-    "tnyk-dcgw": {
+    "tnyk-dcgw-a": {
       "index": "0",
-      "shortname": "tnyk-dcgw",
-      "longname": "clab-dcgw-demo-202604-tnyk-dcgw",
-      "fqdn": "tnyk-dcgw.dcgw-demo-202604.io",
+      "shortname": "tnyk-dcgw-a",
+      "longname": "clab-dcgw-demo-202604-tnyk-dcgw-a",
+      "fqdn": "tnyk-dcgw-a.dcgw-demo-202604.io",
       "group": "",
       "labdir": "/home/clab/clabs/dcgw-demo-202604/clab-dcgw-demo-202604/tnyk-dcgw",
       "kind": "nokia_srsim",
       "image": "nokia_srsim:25.7.R1",
       "mgmt-net": "",
       "mgmt-intf": "",
-      "mgmt-ipv4-address": "172.20.20.6",
+      "mgmt-ipv4-address": "172.20.20.9",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "3fff:172:20:20::6",
+      "mgmt-ipv6-address": "3fff:172:20:20::9",
       "mgmt-ipv6-prefix-length": 64,
-      "mac-address": "1c:b2:00:00:00:00",
+      "mac-address": "1c:2a:00:00:00:00",
       "labels": {
         "clab-mgmt-net-bridge": "br-23db46a62111",
         "clab-node-group": "",
@@ -60,9 +60,9 @@
       "image": "ghcr.io/hellt/network-multitool",
       "mgmt-net": "",
       "mgmt-intf": "",
-      "mgmt-ipv4-address": "172.20.20.4",
+      "mgmt-ipv4-address": "172.20.20.7",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "3fff:172:20:20::4",
+      "mgmt-ipv6-address": "3fff:172:20:20::7",
       "mgmt-ipv6-prefix-length": 64,
       "mac-address": "",
       "labels": {
@@ -81,13 +81,13 @@
         {
           "host-ip": "",
           "host-port": 0,
-          "port": 443,
+          "port": 80,
           "protocol": "tcp"
         },
         {
           "host-ip": "",
           "host-port": 0,
-          "port": 80,
+          "port": 443,
           "protocol": "tcp"
         }
       ]
@@ -103,9 +103,9 @@
       "image": "ghcr.io/hellt/network-multitool",
       "mgmt-net": "",
       "mgmt-intf": "",
-      "mgmt-ipv4-address": "172.20.20.9",
+      "mgmt-ipv4-address": "172.20.20.6",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "3fff:172:20:20::9",
+      "mgmt-ipv6-address": "3fff:172:20:20::6",
       "mgmt-ipv6-prefix-length": 64,
       "mac-address": "",
       "labels": {
@@ -135,11 +135,11 @@
         }
       ]
     },
-    "tpe7-dcgw": {
+    "tpe7-dcgw-a": {
       "index": "3",
-      "shortname": "tpe7-dcgw",
-      "longname": "clab-dcgw-demo-202604-tpe7-dcgw",
-      "fqdn": "tpe7-dcgw.dcgw-demo-202604.io",
+      "shortname": "tpe7-dcgw-a",
+      "longname": "clab-dcgw-demo-202604-tpe7-dcgw-a",
+      "fqdn": "tpe7-dcgw-a.dcgw-demo-202604.io",
       "group": "",
       "labdir": "/home/clab/clabs/dcgw-demo-202604/clab-dcgw-demo-202604/tpe7-dcgw",
       "kind": "nokia_srsim",
@@ -150,7 +150,7 @@
       "mgmt-ipv4-prefix-length": 24,
       "mgmt-ipv6-address": "3fff:172:20:20::8",
       "mgmt-ipv6-prefix-length": 64,
-      "mac-address": "1c:26:03:00:00:00",
+      "mac-address": "1c:14:03:00:00:00",
       "labels": {
         "clab-mgmt-net-bridge": "br-23db46a62111",
         "clab-node-group": "",
@@ -220,9 +220,9 @@
       "image": "ghcr.io/hellt/network-multitool",
       "mgmt-net": "",
       "mgmt-intf": "",
-      "mgmt-ipv4-address": "172.20.20.7",
+      "mgmt-ipv4-address": "172.20.20.4",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "3fff:172:20:20::7",
+      "mgmt-ipv6-address": "3fff:172:20:20::4",
       "mgmt-ipv6-prefix-length": 64,
       "mac-address": "",
       "labels": {
@@ -258,13 +258,13 @@
       "a": {
         "node": "tnyk-h200",
         "interface": "eth1",
-        "mac": "aa:c1:ab:cb:7e:03",
+        "mac": "aa:c1:ab:a5:24:4f",
         "peer": "z"
       },
       "z": {
-        "node": "tnyk-dcgw",
+        "node": "tnyk-dcgw-a",
         "interface": "e1-1-c21-1",
-        "mac": "aa:c1:ab:e5:57:47",
+        "mac": "aa:c1:ab:6f:50:18",
         "peer": "a"
       }
     },
@@ -272,13 +272,13 @@
       "a": {
         "node": "tnyk-r740xd",
         "interface": "eth1",
-        "mac": "aa:c1:ab:bb:a9:d9",
+        "mac": "aa:c1:ab:44:84:eb",
         "peer": "z"
       },
       "z": {
-        "node": "tnyk-dcgw",
+        "node": "tnyk-dcgw-a",
         "interface": "e1-1-c22-1",
-        "mac": "aa:c1:ab:c7:13:69",
+        "mac": "aa:c1:ab:e7:01:6b",
         "peer": "a"
       }
     },
@@ -286,13 +286,13 @@
       "a": {
         "node": "tpe7-h100",
         "interface": "eth1",
-        "mac": "aa:c1:ab:8f:5e:46",
+        "mac": "aa:c1:ab:d9:b2:3e",
         "peer": "z"
       },
       "z": {
-        "node": "tpe7-dcgw",
+        "node": "tpe7-dcgw-a",
         "interface": "e1-1-c21-1",
-        "mac": "aa:c1:ab:93:f6:5d",
+        "mac": "aa:c1:ab:97:67:46",
         "peer": "a"
       }
     },
@@ -300,27 +300,27 @@
       "a": {
         "node": "tpe7-r740xd",
         "interface": "eth1",
-        "mac": "aa:c1:ab:dd:d4:0f",
+        "mac": "aa:c1:ab:31:c3:d6",
         "peer": "z"
       },
       "z": {
-        "node": "tpe7-dcgw",
+        "node": "tpe7-dcgw-a",
         "interface": "e1-1-c22-1",
-        "mac": "aa:c1:ab:d2:81:cd",
+        "mac": "aa:c1:ab:47:e6:ca",
         "peer": "a"
       }
     },
     {
       "a": {
-        "node": "tnyk-dcgw",
+        "node": "tnyk-dcgw-a",
         "interface": "e1-1-c26-1",
-        "mac": "aa:c1:ab:a4:a5:b6",
+        "mac": "aa:c1:ab:03:42:c4",
         "peer": "z"
       },
       "z": {
-        "node": "tpe7-dcgw",
+        "node": "tpe7-dcgw-a",
         "interface": "e1-1-c26-1",
-        "mac": "aa:c1:ab:ed:58:fc",
+        "mac": "aa:c1:ab:3d:d0:2d",
         "peer": "a"
       }
     }

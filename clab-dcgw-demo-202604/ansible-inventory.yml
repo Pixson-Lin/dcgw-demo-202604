@@ -8,13 +8,13 @@ all:
     linux:
       hosts:
         clab-dcgw-demo-202604-tnyk-h200:
-          ansible_host: 172.20.20.4
+          ansible_host: 172.20.20.7
         clab-dcgw-demo-202604-tnyk-r740xd:
-          ansible_host: 172.20.20.9
+          ansible_host: 172.20.20.6
         clab-dcgw-demo-202604-tpe7-h100:
           ansible_host: 172.20.20.5
         clab-dcgw-demo-202604-tpe7-r740xd:
-          ansible_host: 172.20.20.7
+          ansible_host: 172.20.20.4
     nokia_srsim:
       vars:
         ansible_network_os: nokia.sros.md
@@ -24,7 +24,7 @@ all:
         ansible_user: admin
         ansible_password: NokiaSros1!
       hosts:
-        clab-dcgw-demo-202604-tnyk-dcgw:
-          ansible_host: 172.20.20.6
-        clab-dcgw-demo-202604-tpe7-dcgw:
+        clab-dcgw-demo-202604-tnyk-dcgw-a:
+          ansible_host: 172.20.20.9
+        clab-dcgw-demo-202604-tpe7-dcgw-a:
           ansible_host: 172.20.20.8

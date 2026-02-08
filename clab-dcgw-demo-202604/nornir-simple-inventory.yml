@@ -3,12 +3,12 @@ tnyk-h200:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.4
+    hostname: 172.20.20.7
 tnyk-r740xd:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.9
+    hostname: 172.20.20.6
 tpe7-h100:
     username: 
     password: 
@@ -18,13 +18,13 @@ tpe7-r740xd:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.7
-tnyk-dcgw:
+    hostname: 172.20.20.4
+tnyk-dcgw-a:
     username: admin
     password: NokiaSros1!
     platform: nokia_srsim
-    hostname: 172.20.20.6
-tpe7-dcgw:
+    hostname: 172.20.20.9
+tpe7-dcgw-a:
     username: admin
     password: NokiaSros1!
     platform: nokia_srsim

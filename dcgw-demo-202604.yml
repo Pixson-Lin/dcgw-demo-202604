@@ -16,6 +16,9 @@ topology:
       type: SR-1-46S
       env :
         NOKIA_SROS_SYSTEM_BASE_MAC: 1c:58:07:00:00:01 # override Chassis MAC
+      components:
+        - slot: A
+        - slot: 1
 
     # 7750 SR-1-46S at TPE7 台北東七
     tpe7-dcgw:
@@ -23,7 +26,9 @@ topology:
       type: SR-1-46S
       env :
         NOKIA_SROS_SYSTEM_BASE_MAC: 1c:58:07:01:00:01 # override Chassis MAC
-
+      components:
+        - slot: A
+        - slot: 1
 
     # Servers
     tnyk-h200:

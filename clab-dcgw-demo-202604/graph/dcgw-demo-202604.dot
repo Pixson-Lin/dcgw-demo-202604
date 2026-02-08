@@ -1,0 +1,14 @@
+graph dcgw-demo-202604 {
+	tpe7-r740xd--tpe7-dcgw[ color=black ];
+	tnyk-dcgw--tpe7-dcgw[ color=black ];
+	tnyk-h200--tnyk-dcgw[ color=black ];
+	tnyk-r740xd--tnyk-dcgw[ color=black ];
+	tpe7-h100--tpe7-dcgw[ color=black ];
+	tnyk-dcgw [ color=red, fillcolor=red, label=tnyk-dcgw, style=filled, xlabel=nokia_srsim ];
+	tnyk-h200 [ color=red, fillcolor=red, label=tnyk-h200, style=filled, xlabel=linux ];
+	tnyk-r740xd [ color=red, fillcolor=red, label=tnyk-r740xd, style=filled, xlabel=linux ];
+	tpe7-dcgw [ color=red, fillcolor=red, label=tpe7-dcgw, style=filled, xlabel=nokia_srsim ];
+	tpe7-h100 [ color=red, fillcolor=red, label=tpe7-h100, style=filled, xlabel=linux ];
+	tpe7-r740xd [ color=red, fillcolor=red, label=tpe7-r740xd, style=filled, xlabel=linux ];
+
+}
