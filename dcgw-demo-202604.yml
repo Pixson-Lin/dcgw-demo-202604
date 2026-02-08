@@ -1,0 +1,51 @@
+name: "dcgw-demo-202604"
+
+topology:
+  kinds:
+    nokia_srsim:
+      license: ../25.x_SR_SIM_License.txt
+      image: nokia_srsim:25.7.R1
+    linux:
+      image: ghcr.io/hellt/network-multitool
+
+  nodes:
+    # NE chassises
+    # 7750 SR-1-46S at TYNK 台南永康
+    tnyk-dcgw:
+      kind: nokia_srsim
+      type: SR-1-46S
+      env :
+        NOKIA_SROS_SYSTEM_BASE_MAC: 1c:58:07:00:00:01 # override Chassis MAC
+
+    # 7750 SR-1-46S at TPE7 台北東七
+    tpe7-dcgw:
+      kind: nokia_srsim
+      type: SR-1-46S
+      env :
+        NOKIA_SROS_SYSTEM_BASE_MAC: 1c:58:07:01:00:01 # override Chassis MAC
+
+
+    # Servers
+    tnyk-h200:
+      kind: linux
+    
+    tnyk-r740xd:
+      kind: linux
+
+    tpe7-h100:
+      kind: linux
+    
+    tpe7-r740xd:
+      kind: linux
+
+
+  links:
+    # Datapath links
+    - endpoints: ["tnyk-h200:eth1", "tnyk-dcgw:1/1/c21/1"]        # tnyk-dcgw:LAG-10
+    - endpoints: ["tnyk-r740xd:eth1", "tnyk-dcgw:1/1/c22/1"]      # tnyk-dcgw:LAG-20
+
+    - endpoints: ["tpe7-h100:eth1", "tpe7-dcgw:1/1/c21/1"]        # tpe7-dcgw:LAG-10
+    - endpoints: ["tpe7-r740xd:eth1", "tpe7-dcgw:1/1/c22/1"]      # tpe7-dcgw:LAG-20
+
+    - endpoints: ["tnyk-dcgw:1/1/c26/1", "tpe7-dcgw:1/1/c26/1"]   # tnyk-dcgw:LAG-100, tpe7-dcgw:LAG-100, 永康東七oAPN
+
